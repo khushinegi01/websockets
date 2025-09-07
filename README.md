@@ -1,12 +1,17 @@
-# React + Vite
+# Live Cursor - Web Socket
+A small project to understand the working of WebSockets and how they establish a persistent server-client connection, enabling low-latency, full-duplex, bidirectional communication.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Unlike the classic HTTP request-response model, WebSockets maintain a single TCP connection, allowing continuous data transfer between client and server. Web-Sockets are used for creating realtime-applications like -
 
-Currently, two official plugins are available:
+1. Live chat applications
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+2. Multiplayer gaming
 
-## Expanding the ESLint configuration
+3. Collaborative document editing
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+4. IoT device updates
+
+5. Financial dashboards
+
+This project is inspired by the Realtime Mouse Pointers feature in tools like Canva and Figma, which display multiple collaborators’ cursors on the screen. Similarly, this project demonstrates how multiple members can log in and track each other’s mouse movements in real time. 
+
