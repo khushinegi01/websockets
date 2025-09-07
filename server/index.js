@@ -22,13 +22,13 @@ const handleMessage = (bytes , uuid)=>{
     const user = users[uuid]
     user.state = message
     broadcast()
-    console.log(user)
-    console.log(user.username , "position : " , user.state)
+    // console.log(user)
+    // console.log(user.username , "position : " , user.state)
 }
 
 const handleClose = (uuid)=>{
     const user = users[uuid]
-    console.log(`${user.username} has been disconnected`)
+    // console.log(`${user.username} has been disconnected`)
     delete user;
     delete connections[uuid]; 
     broadcast();
@@ -38,8 +38,8 @@ wsServer.on("connection" , (connection , request)=>{
    // ws://localhost:8080?username=Alex
     const {username} = url.parse(request.url , true).query;
     const uuid = uuidv4()
-    console.log("username : ", username)
-    console.log("uuid : " , uuid)
+    // console.log("username : ", username)
+    // console.log("uuid : " , uuid)
 
     connections[uuid] = connection
     // console.log(connections)

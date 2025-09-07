@@ -5,7 +5,7 @@ export default function Login({ onLoginUser }) {   // taking setUsername as prop
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Login with:", { username });
+    // console.log("Login with:", { username });
     onLoginUser(username)
   };
 

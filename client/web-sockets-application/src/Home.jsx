@@ -4,7 +4,7 @@ import throttle from 'lodash.throttle' //. to control the function call
 import { Cursor } from './component/Cursor'
 const colors = ["red", "yellow", "rosybrown", "green", "orange"]
 const getUserColor = (username) => {
-    console.log(username, " is the username .")
+    // console.log(username, " is the username .")
     let sum = 0
     for (let i = 0; i < colors.length; i++) {
         sum += username.charCodeAt(i)
@@ -25,8 +25,6 @@ function Home({ username }) {
     const { sendJsonMessage, lastJsonMessage } = useWebSocket(ws_Url, {
         queryParams: { username }            //  adds parameter in url = "ws://localhost:8080?username="khushi"
     })
-
-    console.log(lastJsonMessage)
     const throttleTime = 50
     const sendJsonMessageThrottled = useRef(throttle(sendJsonMessage, throttleTime))      // useRef is used to hold the reference of the throttle so that multiple times rendering can be avoided 
 
