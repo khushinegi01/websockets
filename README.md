@@ -15,3 +15,5 @@ Unlike the classic HTTP request-response model, WebSockets maintain a single TCP
 
 This project is inspired by the Realtime Mouse Pointers feature in tools like Canva and Figma, which display multiple collaborators’ cursors on the screen. Similarly, this project demonstrates how multiple members can log in and track each other’s mouse movements in real time. 
 
+# Demo Video
+https://github.com/user-attachments/assets/11f6c332-be7a-4250-9ae5-e793258e8169
